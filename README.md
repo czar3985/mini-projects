@@ -12,7 +12,7 @@ Notes: Customizable parts of the code are time between breaks, number of interru
 for the entire session and video that opens up to signal break time.
 
 Current defaults:
-```
+```python
 timeBetweenBreaks = 3600 ## Time in seconds 
 numCycles = 3 ## Number of interruptions 
 url = "https://www.youtube.com/watch?v=XqZsoesa55w" ## Shark Dance video
@@ -23,6 +23,7 @@ url = "https://www.youtube.com/watch?v=XqZsoesa55w" ## Shark Dance video
 Uses Python's Turtle graphics library
 
 `villager.py` draws a Minecraft villager head.
+
 `flower.py` draws a flower
 
 **3. Secret Message**
@@ -38,5 +39,26 @@ Prerequisite: Python 2.7.5
 Note: The translate method should be modified for Python 3.x.
 
 **4. Send Text**
+
+The script sends a text message to a mobile phone via the Twilio service.
+
+Script: `send_text.py`
+
+Usage: 
+- Install the Twilio Python package. Go to the command prompt 
+and type `easy_install_twilio`
+- Sign up for a Twilio account [here](https://www.twilio.com/try-twilio).
+- From the Twilio console, take the Account SID, Auth token and twilio 
+number
+- The lines in the code to be modified: (Example doesn't show real values)
+    ```python
+    account_sid = "ACab1cde2345f6g78h9ij1k011121314m1"
+    auth_token = "abc12defgh34i567j8k9101112m1314n"
+    ```
+    ```python
+    body='Hello world',
+    from_='+13123456789',
+    to='+64123456789'
+    ```
 
 **5. Profanity Checker**
