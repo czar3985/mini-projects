@@ -28,7 +28,7 @@ Uses Python's Turtle graphics library
 
 **3. Secret Message**
 
-The secret message decoder takes a secret message from the files in the folder `decodeThis`.
+The secret message decoder takes a secret message from the files in the folder _decodeThis_.
 Running the program will rename the files to remove the numbers from the file names. 
 When the files are sorted, a secret message will appear.
 
@@ -62,3 +62,18 @@ number
     ```
 
 **5. Profanity Checker**
+
+The program uses Google API in What Do You Like website for checking curse words.
+Input is fed to this [site](http://www.wdylike.appspot.com/?q=) and it returns `true` 
+or `false` depending on whether a curse word is detected.
+
+Script: `profanity_checker.py`
+
+Usage: Text input can be made through the console or through a file named 
+_text_for_checking.txt_.
+User is also asked whether line information where the curse word was detected
+will be required. 
+
+Sample output: Inappropriate word(s) found in line X: A line in a song lyrics with profanity here
+
+To Do: Replace curse words when found with asterisks
