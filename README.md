@@ -15,12 +15,15 @@ numCycles = 3 ## Number of interruptions
 url = "https://www.youtube.com/watch?v=XqZsoesa55w" ## Shark Dance video
 ```
 
-**2. Draw Squares**
+**2. Turtle Drawings**
 
-**3. Turtle Drawings**
+Description: Uses Python's Turtle graphics library
 
-**4. Secret Message**
+`villager.py` draws a Minecraft villager head.
+`flower.py` draws a flower
 
-**5. Send Text**
+**3. Secret Message**
 
-**6. Profanity Checker**
+**4. Send Text**
+
+**5. Profanity Checker**
