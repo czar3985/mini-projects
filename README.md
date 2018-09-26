@@ -77,3 +77,27 @@ will be required.
 Sample output: Inappropriate word(s) found in line X: A line in a song lyrics with profanity here
 
 To Do: Replace curse words when found with asterisks
+
+**6. Geocode**
+
+The program uses Google Maps' Geolocation api to convert an address into geographic
+coordinates (latitude, longitude)
+
+Script: `geocode.py`
+
+Prerequisites: 
+- Google developer account
+- Google API key 
+- A text file `google_api_key.txt` placed in the same folder as `geocode.py` containing 
+the developer's Google API key
+- python
+- httplib2
+
+Usage:
+Import the method and pass the address string to the `getGeocodeLocation` method
+
+Example:
+```python
+from geocode import getGeocodeLocation
+getGeocodeLocation("Boracay, Philippines")
+```
